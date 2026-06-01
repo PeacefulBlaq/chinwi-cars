@@ -1,0 +1,85 @@
+{
+  "en": {
+    "heroTitle": "Rent Your Perfect Car In Agadir, Morocco",
+    "heroSubtitle": "Affordable prices, airport delivery, and premium service.",
+    "bookWhatsapp": "Book On WhatsApp",
+
+    "carsTitle": "Available Cars",
+    "fleetSubtitle": "Choose from our premium fleet",
+
+    "reserve": "Reserve",
+    "priceSuffix": "MAD / Day",
+
+    "whyTitle": "Why Us",
+    "why1": "Affordable",
+    "why2": "Modern Fleet",
+    "why3": "Airport Pickup",
+    "why4": "24/7 Support",
+
+    "galleryTitle": "Gallery",
+
+    "reviewTitle": "Customer Reviews",
+    "review1": "Very professional service.",
+    "review2": "Clean cars and easy booking.",
+    "review3": "Highly recommended.",
+
+    "contactTitle": "Contact Us",
+    "searchPlaceholder": "Search vehicle..."
+  },
+
+  "fr": {
+    "heroTitle": "Louez Votre Voiture Idéale à Agadir, Au Maroc",
+    "heroSubtitle": "Prix abordables, livraison à l'aéroport et service premium.",
+    "bookWhatsapp": "Réserver sur WhatsApp",
+
+    "carsTitle": "Voitures Disponibles",
+    "fleetSubtitle": "Choisissez parmi notre flotte premium",
+
+    "reserve": "Réserver",
+    "priceSuffix": "MAD / Jour",
+
+    "whyTitle": "Pourquoi Nous",
+    "why1": "Abordable",
+    "why2": "Flotte Moderne",
+    "why3": "Prise en Charge Aéroport",
+    "why4": "Service 24/7",
+
+    "galleryTitle": "Galerie",
+
+    "reviewTitle": "Avis Clients",
+    "review1": "Service très professionnel.",
+    "review2": "Voitures propres et réservation facile.",
+    "review3": "Fortement recommandé.",
+
+    "contactTitle": "Contactez-Nous",
+    "searchPlaceholder": "Rechercher un véhicule..."
+  },
+
+  "ar": {
+    "heroTitle": "استأجر سيارتك المثالية في أكادير، المغرب",
+    "heroSubtitle": "أسعار مناسبة، توصيل للمطار وخدمة ممتازة.",
+    "bookWhatsapp": "احجز عبر واتساب",
+
+    "carsTitle": "السيارات المتوفرة",
+    "fleetSubtitle": "اختر من أسطولنا المميز",
+
+    "reserve": "احجز",
+    "priceSuffix": "درهم / يوم",
+
+    "whyTitle": "لماذا نحن",
+    "why1": "أسعار مناسبة",
+    "why2": "أسطول حديث",
+    "why3": "استقبال في المطار",
+    "why4": "دعم 24/7",
+
+    "galleryTitle": "المعرض",
+
+    "reviewTitle": "آراء العملاء",
+    "review1": "خدمة احترافية جداً.",
+    "review2": "سيارات نظيفة وحجز سهل.",
+    "review3": "أنصح به بشدة.",
+
+    "contactTitle": "اتصل بنا",
+    "searchPlaceholder": "ابحث عن سيارة..."
+  }
+}

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chinwi Cars - Car Rental, Agadir Morocco</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            Chinwi Cars
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-2">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#cars">Cars</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Why Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <button id="langBtn" class="btn btn-outline-light btn-sm">FR</button>
+                </li>
+
+                <li class="nav-item">
+                    <button id="themeBtn" class="btn btn-outline-light btn-sm">🌙</button>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <h1 id="heroTitle" data-i18n="heroTitle">
+                    Rent Your Perfect Car In Agadir, Morocco
+                </h1>
+
+                <p class="lead mt-3" data-i18n="heroSubtitle">
+                    Affordable prices, airport delivery, and premium service.
+                </p>
+
+                <a class="btn btn-success btn-lg mt-3" data-i18n="bookWhatsapp" href="https://wa.me/+212664142131" target="_blank"
+                   class="btn btn-success btn-lg mt-3">
+
+                    <i class="fab fa-whatsapp"></i>
+                    Book On WhatsApp
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CARS -->
+<section id="cars" class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-4">
+
+            <h2 id="carsTitle" data-i18n="carsTitle">Available Cars</h2>
+
+            <p data-i18n="fleetSubtitle">Choose from our premium fleet</p>
+
+            <!-- SEARCH -->
+            <div class="row mt-3">
+
+                <div class="col-md-6 mx-auto">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="form-control form-control-lg"
+                        placeholder="Search vehicle...">
+
+                </div>
+
+            </div>
+
+            <div id="noResults" class="text-muted mt-3 d-none">
+                No vehicles found.
+            </div>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- CAR 1 -->
+            <div class="col-md-4 car-item" data-name="Dacia Logan">
+                <div class="card car-card">
+                    <img src="img/dacia_logan.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Dacia Logan</h5>
+                        <p>250 <span data-i18n="priceSuffix"></span></p>
+                        <button class="btn btn-primary w-100 reserve-btn" data-car="Dacia Logan" data-price="250" data-bs-toggle="modal" data-bs-target="#bookingModal">Reserve</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAR 2 -->
+            <div class="col-md-4 car-item" data-name="Renault Clio">
+                <div class="card car-card">
+                    <img src="img/renault_clio.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Renault Clio</h5>
+                        <p>300 <span data-i18n="priceSuffix"></span></p>
+                        <button class="btn btn-primary w-100 reserve-btn" data-car="Renault Clio" data-price="300" data-bs-toggle="modal" data-bs-target="#bookingModal">Reserve</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAR 3 -->
+            <div class="col-md-4 car-item" data-name="BMW X5">
+                <div class="card car-card">
+                    <img src="img/BMW_X5.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>BMW X5</h5>
+                        <p>950 <span data-i18n="priceSuffix"></span></p>
+                        <button class="btn btn-primary w-100 reserve-btn" data-car="BMW X5" data-price="950" data-bs-toggle="modal" data-bs-target="#bookingModal">Reserve</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="bg-light py-5">
+
+    <div class="container text-center">
+
+        <h2 id="whyTitle" data-i18n="whyTitle">Why Us</h2>
+
+        <div class="row mt-4">
+
+            <div class="col-md-3">
+                <i class="fa fa-money-bill fa-2x mb-2"></i>
+                <h6 data-i18n="why1">Affordable</h6>
+            </div>
+
+            <div class="col-md-3">
+                <i class="fa fa-car fa-2x mb-2"></i>
+                <h6 data-i18n="why2">Modern Fleet</h6>
+            </div>
+
+            <div class="col-md-3">
+                <i class="fa fa-plane fa-2x mb-2"></i>
+                <h6 data-i18n="why3">Airport Pickup</h6>
+            </div>
+
+            <div class="col-md-3">
+                <i class="fa fa-headset fa-2x mb-2"></i>
+                <h6 data-i18n="why4">24/7 Support</h6>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-5">
+
+    <div class="container text-center">
+
+        <h2 id="galleryTitle" data-i18n="galleryTitle">Gallery</h2>
+
+        <div class="row g-3 mt-3">
+
+            <div class="col-md-4 gallery">
+                <img src="img/gallery1.jpg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 gallery">
+                <img src="img/gallery2.jpg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 gallery">
+                <img src="img/gallery3.jpg" class="img-fluid rounded">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="py-5">
+
+    <div class="container text-center">
+
+        <h2 id="reviewTitle" data-i18n="reviewTitle">Customer Reviews</h2>
+
+        <div class="row mt-4">
+
+            <div class="col-md-4">
+                <div class="review-box">
+                    ⭐⭐⭐⭐⭐
+                    <p data-i18n="review1">Very professional service.</p>
+                    <strong>John</strong>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="review-box">
+                    ⭐⭐⭐⭐⭐
+                    <p data-i18n="review2">Clean cars and easy booking.</p>
+                    <strong>Sarah</strong>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="review-box">
+                    ⭐⭐⭐⭐⭐
+                    <p data-i18n="review3">Highly recommended.</p>
+                    <strong>Ahmed</strong>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="dark-section py-5 text-white text-center">
+
+    <div class="container">
+
+        <h2 id="contactTitle" data-i18n="contactTitle">Contact Us</h2>
+        <p>+212 664 142 131</p>
+        <p>info@chinwicars.ma</p>
+        <p>Agadir, Morocco</p>
+
+        <div class="ratio ratio-16x9 mt-4">
+
+            <iframe
+                src="https://maps.google.com/maps?q=casablanca&t=&z=13&ie=UTF8&output=embed"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/+212664142131" target="_blank" class="whatsapp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- MODAL -->
+<div class="modal fade" id="bookingModal">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5>Book Vehicle</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="alert alert-info">
+                    Selected Vehicle:<strong id="selectedCar">None</strong>
+                </div>
+
+                <input id="customerName" class="form-control mb-3" placeholder="Full Name">
+
+                <input id="customerPhone" class="form-control mb-3" placeholder="Phone Number">
+
+                <input id="pickupDate" type="date" class="form-control mb-3">
+
+                <input id="returnDate" type="date" class="form-control mb-3">
+
+                <button id="submitBooking" type="button" class="btn btn-success w-100">Submit Booking</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="py-4 text-center">
+
+    <div class="container">
+
+        <small>
+
+            Designed and developed by
+
+            <a
+                href="https://abidemibakre.com.ng/"
+                target="_blank">
+
+                Abidemi Bakre
+
+            </a>
+
+            |
+
+            <a
+                href="https://wa.me/+2347065050295"
+                target="_blank">
+
+                WhatsApp: +234 706 505 0295
+
+            </a>
+
+        </small>
+
+    </div>
+
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

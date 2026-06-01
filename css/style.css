@@ -1,0 +1,138 @@
+body{
+font-family:Segoe UI,sans-serif;
+transition: all 0.3s ease;
+}
+
+.navbar{
+background:#111;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+background:
+linear-gradient(
+rgba(0,0,0,.6),
+rgba(0,0,0,.6)),
+url('../img/hero.jpg');
+
+background-size:cover;
+background-position:center;
+
+color:white;
+}
+
+.car-card{
+transition:.3s;
+border:none;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.car-card:hover{
+transform:translateY(-10px);
+}
+
+.card, .review-box, .navbar {
+    transition: all 0.3s ease;
+}
+
+.review-box{
+padding:30px;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+border-radius:10px;
+}
+
+.dark-section{
+background:#111;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+
+width:60px;
+height:60px;
+
+background:#25D366;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+color:white;
+
+font-size:28px;
+
+text-decoration:none;
+}
+
+.gallery img{
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/*
+|--------------------------------------------------------------------------
+| DARK MODE
+|--------------------------------------------------------------------------
+*/
+
+body.dark-mode {
+    background: #0f0f0f;
+    color: #ffffff;
+}
+
+/* Cards in dark mode */
+body.dark-mode .card {
+    background: #1c1c1c;
+    color: #ffffff;
+}
+
+/* Review boxes */
+body.dark-mode .review-box {
+    background: #1c1c1c;
+    color: #ffffff;
+}
+
+/* Navbar tweak */
+body.dark-mode .navbar {
+    background: #000 !important;
+}
+
+/* Sections that were light */
+body.dark-mode .bg-light {
+    background: #1a1a1a !important;
+    color: #fff;
+}
+
+/*
+|--------------------------------------------------------------------------
+| FOOTER
+|--------------------------------------------------------------------------
+*/
+
+footer {
+    background: #f8f9fa;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+body.dark-mode footer {
+    background: #111;
+}
+
+body.dark-mode footer small,
+body.dark-mode footer a {
+    color: #fff;
+}
